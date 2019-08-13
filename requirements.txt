@@ -2,5 +2,6 @@ telethon
 lxml
 selenium
 aria2p
-ChatterBot
+chatterbot
+chatterbot_corpus
 -r ./requirements-stdborg.txt
