@@ -41,7 +41,7 @@ async def labstack(event):
         "curl",
         "-F", "files=@" + filebase,
         "-H","Transfer-Encoding: chunked",
-        "-H","Up-User-ID: IZfFbjUcgoo3Ao3m",
+        "-H","Up-User-ID: IZfFbjUcFoo3Ao3m",
         url
     ]
     try:
