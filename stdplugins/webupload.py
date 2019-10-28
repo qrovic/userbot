@@ -1,3 +1,5 @@
+"""Commands: .web --<anonfiles, anonymousfiles, megaupload>"""
+
 # credits: SNAPDRAGON (@s_n_a_p_s)
 from telethon import events
 import subprocess
