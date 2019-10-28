@@ -1,6 +1,6 @@
 """
 Time In Profile Pic.....
-Command: `.autopp`
+Command: `.autopic`
 
 :::::Credit Time::::::
 1) Coded By: @s_n_a_p_s
@@ -25,7 +25,7 @@ import shutil
 
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 
-@borg.on(admin_cmd("info ?(.*)"))
+@borg.on(admin_cmd("autopic ?(.*)"))
 async def autopic(event):
     downloaded_file_name = "./ravana/original_pic.png"
     downloader = SmartDL(Config.RAVANA_LEELA, downloaded_file_name, progress_bar=True)
@@ -33,7 +33,7 @@ async def autopic(event):
     photo = "photo_pfp.png"
     while not downloader.isFinished():
         place_holder = None
-    counter = -30
+    counter = -180
     while True:
         shutil.copy(downloaded_file_name, photo)
         im = Image.open(photo)
@@ -51,6 +51,6 @@ async def autopic(event):
             ))
             os.remove(photo)
             counter -= 180
-            await asyncio.sleep(10)
+            await asyncio.sleep(5)
         except:
             return
