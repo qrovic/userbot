@@ -51,6 +51,6 @@ async def autopic(event):
             ))
             os.remove(photo)
             counter -= 180
-            await asyncio.sleep(5)
+            await asyncio.sleep(1)
         except:
             return
