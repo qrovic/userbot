@@ -71,7 +71,6 @@ class Config(object):
         "snip",
         "gban",
         "welcome",
-        "notification",
         "markdown"
 
     ]
