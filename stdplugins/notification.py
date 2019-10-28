@@ -114,7 +114,9 @@ async def approve_p_m(event):
                 pmpermit_sql.disapprove(chat.id)
                 await event.edit("███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\nFuck Off Bitch, Now You Can't Message Me...")
                 await asyncio.sleep(30)
-                await borg(functions.contacts.BlockRequest(chat.id))
+                await borg(functions.account.ReportPeerRequest(peer=await message.client
+                                                                     .get_input_entity(message.to_id),
+                                                                     reason=types.InputReportReasonSpam()))
 
 
 @borg.on(admin_cmd(pattern="listapprovedpms"))
