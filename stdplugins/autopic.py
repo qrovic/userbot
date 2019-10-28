@@ -25,7 +25,7 @@ import shutil
 
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 
-@borg.on(admin_cmd("autopp ?(.*)"))
+@borg.on(admin_cmd("info ?(.*)"))
 async def autopic(event):
     downloaded_file_name = "./ravana/original_pic.png"
     downloader = SmartDL(Config.RAVANA_LEELA, downloaded_file_name, progress_bar=True)
@@ -50,7 +50,7 @@ async def autopic(event):
                 file
             ))
             os.remove(photo)
-            counter -= 30
-            await asyncio.sleep(60)
+            counter -= 180
+            await asyncio.sleep(10)
         except:
             return
