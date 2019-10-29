@@ -71,7 +71,9 @@ class Config(object):
         "snip",
         "gban",
         "welcome",
-        "markdown"
+        "markdown",
+        "mention",
+        "notification"
 
     ]
     # Get your own API key from https://www.remove.bg/ or
