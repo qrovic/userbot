@@ -25,7 +25,7 @@ async def _(event):
     async with borg.conversation(chat) as conv:
           try:     
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=507379365))
-              await borg.send_file(event.chat_id, reply.message.text)
+              await borg.send_file(event.chat_id, response.message.text)
               response = await response 
           except YouBlockedUserError: 
               await event.reply("```Please unblock @sangmatainfo_bot and try again```")
