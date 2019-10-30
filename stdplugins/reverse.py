@@ -34,7 +34,7 @@ async def okgoogle(img):
     message = await img.get_reply_message()
     if message and message.media:
         photo = io.BytesIO()
-        await bot.download_media(message, photo)
+        await event.client.download_media(message, photo)
     else:
         await img.edit("`Reply to photo or sticker nigger.`")
         return
