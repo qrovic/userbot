@@ -25,7 +25,7 @@ useragent = 'Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) 
 opener.addheaders = [('User-agent', useragent)]
 
 
-@borg.on(admin_cmd("^.reverse(?: |$)(\d*)"))
+@borg.on(admin_cmd("reverse ?(.*)"))
 async def okgoogle(img):
     """ For .reverse command, Google search images and stickers. """
     if os.path.isfile("okgoogle.png"):
