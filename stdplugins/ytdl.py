@@ -102,7 +102,7 @@ async def download_video(v_url):
             True,
             'postprocessors': [{
                 'key': 'FFmpegExtractAudio',
-                'preferredcodec': 'best',
+                'preferredcodec': 'mp3',
                 'preferredquality': '0',
             }],
             'outtmpl':
