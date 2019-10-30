@@ -30,7 +30,7 @@ async def _(event):
           except YouBlockedUserError: 
               await event.reply("```Please unblock @sangmatainfo_bot and try again```")
               return
-          if response.text.startswith("Язык/Language"):
+          if response.text.startswith("🌐"):
              await event.edit("```can you kindly disable your forward privacy settings for good?```")
           else: 
              await borg.send_file(event.chat_id, response.message.media)
