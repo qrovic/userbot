@@ -9,6 +9,7 @@
 
 import io
 import os
+from telethon import events
 import urllib
 from urllib.request import urlopen
 import requests
