@@ -33,4 +33,4 @@ async def _(event):
           if response.text.startswith("🇷🇺"):
              await event.edit("```can you kindly disable your forward privacy settings for good?```")
           else: 
-             await borg.send_message(event.chat_id, response.message.message.media)
+             await event.edit(f"{response.message.message}")
