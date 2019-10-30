@@ -16,7 +16,7 @@ async def _(event):
     if not reply_message.text:
        await event.edit("```reply to text message```")
        return
-    chat = "@dwnmp3Bot"
+    chat = "@AudioTubeBot"
     sender = reply_message.sender
     if reply_message.sender.bot:
        await event.edit("```Reply to actual users message.```")
@@ -24,7 +24,7 @@ async def _(event):
     await event.edit("```Processing```")
     async with borg.conversation(chat) as conv:
           try:     
-              response = conv.wait_event(events.NewMessage(incoming=True,from_users=375300305))
+              response = conv.wait_event(events.NewMessage(incoming=True,from_users=507379365))
               await borg.send_message(chat, reply_message)
               response = await response 
           except YouBlockedUserError: 
