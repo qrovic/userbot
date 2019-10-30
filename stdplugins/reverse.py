@@ -41,11 +41,11 @@ async def okgoogle(img):
         return
 
     if photo:
-        await img.edit("`Processing...`")
+        await event.edit("`Processing...`")
         try:
             image = Image.open(photo)
         except OSError:
-            await img.edit('`Unsupported sexuality, most likely.`')
+            await event.edit('`Unsupported sexuality, most likely.`')
             return
         name = "okgoogle.png"
         image.save(name, "PNG")
@@ -62,10 +62,10 @@ async def okgoogle(img):
         fetchUrl = response.headers['Location']
 
         if response != 400:
-            await img.edit("`Image successfully uploaded to Google. Maybe.`"
+            await event.edit("`Image successfully uploaded to Google. Maybe.`"
                            "\n`Parsing source now. Maybe.`")
         else:
-            await img.edit("`Google told me to fuck off.`")
+            await event.edit("`Google told me to fuck off.`")
             return
 
         os.remove(name)
@@ -75,13 +75,13 @@ async def okgoogle(img):
         imgspage = match['similar_images']
 
         if guess and imgspage:
-            await img.edit(f"[{guess}]({fetchUrl})\n\n`Looking for images...`")
+            await event.edit(f"[{guess}]({fetchUrl})\n\n`Looking for images...`")
         else:
-            await img.edit("`Couldn't find anything for your uglyass.`")
+            await event.edit("`Couldn't find anything for your uglyass.`")
             return
 
         if img.pattern_match.group(1):
-            lim = img.pattern_match.group(1)
+            lim = event.pattern_match.group(1)
         else:
             lim = 3
         images = await scam(match, lim)
@@ -90,7 +90,7 @@ async def okgoogle(img):
             k = requests.get(i)
             yeet.append(k.content)
         try:
-            await img.client.send_file(entity=await
+            await event.client.send_file(entity=await
                                        img.client.get_input_entity(img.chat_id
                                                                    ),
                                        file=yeet,
