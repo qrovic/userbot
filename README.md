@@ -7,4 +7,4 @@
 [![Deploy](https://telegra.ph/file/5cad14dd87b45cdf3872b.jpg)](https://heroku.com/deploy)
 
 
-[Contact Me on Telegram Here](https://telegram.dog/r4v4n4)
+[Contact Me on Telegram Here](https://telegram.dog/theRay1)
