@@ -86,20 +86,20 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "© @UniBorg",
-                text="""@r4v4n4 **( Custom Built By** @r4v4n4 **)** 
+                text="""@theRay1 **( Custom Built By** @theRay1 **)** 
 **Verified Account:** ✅
-**Official Website:** https://ravanaisdrunk.site.live [⠀](https://telegra.ph/file/b0604ea53360cd3858ec5.mp4)
+**Official Website:** N/A
 
 **Pithun 3.7.4 (default, Sep 12 2019, 01:19:52)** 
 **[GCC 7.4.0]**
 **Talethrun 1.10.6**
 
-**Custom Built Fork:** https://github.com/ravana69/Pornhub""",
+**Custom Built Fork:** https://github.com/theRay1s/DirtyBorg""",
                 buttons=[
-                    [custom.Button.url("👤Contact Creator👤", "https://telegram.dog/r4v4n4"), custom.Button.url(
-                        "📼Ravana Audio Memes📼", "https://t.me/tgaudiomemes")],
-                    [custom.Button.url("👨‍💻Source Code👨‍💻", "https://github.com/ravana69/Pornhub"), custom.Button.url(
-                        "❕❗Deploy Me❗❕", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fravana69%2FPornHub%2F&template=https%3A%2F%2Fgithub.com%2Fravana69%2FPornHub%2F")],
+                    [custom.Button.url("👤Contact Creator👤", "https://telegram.dog/theRay1"), custom.Button.url(
+                        "📼theRay1 Audio Memes📼", "https://t.me/tgaudiomemes")],
+                    [custom.Button.url("👨‍💻Source Code👨‍💻", "https://github.com/theRay1s/DirtyBorg"), custom.Button.url(
+                        "❕❗Deploy Me❗❕", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FtheRay1s%2FDirtyBorg&template=https%3A%2F%2Fgithub.com%2FtheRay1s%2FDirtyBorg")],
                     [custom.Button.url("🔰Update Fork🔰", "tg://need_update_for_some_feature"), custom.Button.url(
                         "✳️Fork Boost✳️", "tg://some_unsupported_feature"), custom.Button.url(
                         "♻️Refresh Heroku♻️", "tg://chutiya")]
@@ -121,7 +121,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "⚠️ Warning: Don't Press Any Buttons ⚠️\n\nCustom Fork: https://github.com/ravana69/Pornhub\n\n\nNote: Bas kar BetiChod, Maa Ke Laude, Madarchod"
+            reply_pop_up_alert = "⚠️ Warning: Don't Press Any Buttons ⚠️\n\nCustom Fork: https://github.com/theRay1s/DirtyBorg\n\n\nNote: Bas kar BetiChod, Maa Ke Laude, Madarchod"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(  # pylint:disable=E0602
@@ -153,7 +153,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         reply_pop_up_alert = help_string if help_string is not None else \
             "No DOCSTRING has been setup for {} plugin".format(plugin_name)
         reply_pop_up_alert += "\n\n Use .unload {} to remove this plugin\n\
-            © @r4v4n4".format(plugin_name)
+            © @theRay1".format(plugin_name)
         await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
