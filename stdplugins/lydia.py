@@ -37,15 +37,15 @@ async def lydia_disable_enable(event):
         reply_msg = await event.get_reply_message()
         user_id = reply_msg.from_id
         chat_id = event.chat_id
-        await event.edit("ho")
+        await event.edit("hi")
         if input_str == "e":
             session = api_client.create_session()
             logger.info(session)
             logger.info(add_s(user_id, chat_id, session.id, session.expires))
-            await event.edit(f"hi")
+            await event.edit(f"Hi, How are you")
         elif input_str == "d":
             logger.info(remove_s(user_id, chat_id))
-            await event.edit(f"[__**signal lost**__](tg://user?id={user_id})")
+            await event.edit(f"[Bye, have to go...](tg://user?id={user_id})")
         elif input_str == "l":
             lsts = get_all_s()
             if len(lsts) > 0:
@@ -102,6 +102,6 @@ async def on_new_message(event):
                 async with event.client.action(event.chat_id, "typing"):
                     await asyncio.sleep(random.randint(0, 6))
                     output = api_client.think_thought(session_id, query)
-                    await event.reply ("@thanktelegram: " +output+ "                                                                                                  I♥️U")
+                    await event.reply (output)
             except cf.exception.CoffeeHouseError as e:
                 logger.info(str(e))
