@@ -2,7 +2,7 @@
 Carbon Scraper Plugin for Userbot. //text in creative way.
 usage: .carbon //as a reply to any text message
 
-Thanks to @r4v4n4 for vars
+Thanks to @theRay1 for vars
 
 """
 from selenium.webdriver.support.ui import Select
@@ -62,7 +62,7 @@ async def carbon_api(e):
    await e.client.send_file(
          e.chat_id,
          file,
-         caption="Carbon by [@r4v4n4](https://www.github.com/ravana69/pornhub)",
+         caption="Carbon by [@theRay1](https://www.github.com/theRay1s/DirtyBorg)",
          force_document=True,
          reply_to=e.message.reply_to_msg_id,
          )
