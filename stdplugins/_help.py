@@ -15,8 +15,8 @@ async def _(event):
     else:
         s_help_string = "****:"
     help_string = """@UniBorg ( **Custom Built By** @theRay1 ) \n**Verified Account**: ✅\n**Official Website**: N/A
-Pithun {}
-Talethrun {}
+Python {}
+Telethon {}
  
 **Custom Built Fork**: https://github.com/theRay1s/DirtyBorg""".format(
         sys.version,
