@@ -35,3 +35,13 @@ oauth2client
 httplib2
 humanize
 patool
+spotify_token
+fast.com
+names
+random_cli
+pytuneteller
+dadjokes-cli
+jotquote
+csvfaker
+gitpython
+heroku3
