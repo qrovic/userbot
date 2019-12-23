@@ -144,7 +144,7 @@ class Config(object):
     #
     SPOTIFY_BIO_PREFIX = os.environ.get("SPOTIFY_BIO_PREFIX", None)
 
-    class Production(Config):
+class Production(Config):
     LOGGER = False
 
 
