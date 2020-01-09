@@ -3,7 +3,7 @@ A Torrent Client Plugin Based On Aria2 for Userbot
 Syntax: Start Aria2: .ariastart
     Magnet link: .addmagnet magnetLink
     Torrent file from local: .addtorrent file_path
-    Show Downloads: .showariastatus
+    Show Downloads: .show
     Remove All Downloads: .ariaRM
     Resume All Downloads: .ariaRES
     Pause All Downloads:  .ariaP
@@ -146,7 +146,7 @@ async def resume_all(event):
     await event.edit("Output: " + str(resumed))
 
 
-@borg.on(admin_cmd(pattern="showariastatus"))
+@borg.on(admin_cmd(pattern="show"))
 async def show_all(event):
     if event.fwd_from:
         return
