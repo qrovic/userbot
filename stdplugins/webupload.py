@@ -25,7 +25,7 @@ async def _(event):
         reply = await event.get_reply_message()
         file_name = await event.client.download_media(reply.media, Config.TMP_DOWNLOAD_DIRECTORY)
     reply_to_id = event.message.id
-    CMD_WEB = {"anonfiles": "curl -F \"file=@{}\" https://anonfiles.com/api/upload", "transfer": "curl --upload-file \"{}\" https://transfer.sh/{os.path.basename(file_name)}", "filebin": "curl -X POST --data-binary \"@test.png\" -H \"filename: {}\" \"https://filebin.net\"", "anonymousfiles": "curl -F file=\"@{}\" https://api.anonymousfiles.io/", "megaupload": "curl -F \"file=@{}\" https://megaupload.is/api/upload", "bayfiles": ".exec curl -F \"file=@{}\" https://bayfiles.com/api/upload"}
+    CMD_WEB = {"anonfiles": "curl -F \"file=@{}\" https://anonfiles.com/api/upload", "transfer": "curl --upload-file \"{}\" https://transfer.sh/{os.path.basename(file_name)}", "filebin": "curl -X POST --data-binary \"@test.png\" -H \"filename: {}\" \"https://filebin.net\"", "anonymousfiles": "curl -F file=\"@{}\" https://api.anonymousfiles.io/", "megaupload": "curl -F \"file=@{}\" https://megaupload.is/api/upload/?token=8c0b4dbf20f720ad", "bayfiles": ".exec curl -F \"file=@{}\" https://bayfiles.com/api/upload"}
     try:
         selected_one = CMD_WEB[selected_transfer].format(file_name)
     except KeyError:
