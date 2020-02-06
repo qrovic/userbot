@@ -90,15 +90,15 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 **Verified Account:** ✅
 **Official Website:** N/A
 
-**Pithun 3.7.4 (default, Sep 12 2019, 01:19:52)** 
+**Python 3.7.4 (default, Sep 12 2019, 01:19:52)** 
 **[GCC 7.4.0]**
-**Talethrun 1.10.6**
+**Telethon 1.10.6**
 
 **Custom Built Fork:** https://github.com/uraniumcore/dirtyborg-rebuilded""",
                 buttons=[
-                    [custom.Button.url("👤Contact Creator👤", "https://telegram.dog/theRay1"), custom.Button.url(
-                        "📼theRay1 Movies Hub📼", "https://t.me/alpacinodump")],
-                    [custom.Button.url("👨‍💻Source Code👨‍💻", "https://github.com/theRay1s/DirtyBorg"), custom.Button.url(
+                    [custom.Button.url("👤Contact Creator👤", "https://telegram.dog/ElytrA7"), custom.Button.url(
+                        "📼theRay1 Movies Hub📼", "https://t.me/joinchat/OSscrUoYLn0iRzjafM-FCg")],
+                    [custom.Button.url("👨‍💻Source Code👨‍💻", "https://github.com/uraniumcore/dirtyborg-rebuilded"), custom.Button.url(
                         "❕❗Deploy Me❗❕", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FtheRay1s%2FDirtyBorg&template=https%3A%2F%2Fgithub.com%2FtheRay1s%2FDirtyBorg")],
                     [custom.Button.url("🔰Update Fork🔰", "tg://need_update_for_some_feature"), custom.Button.url(
                         "✳️Fork Boost✳️", "tg://some_unsupported_feature"), custom.Button.url(
