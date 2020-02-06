@@ -14,11 +14,11 @@ async def _(event):
         s_help_string = borg._plugins[splugin_name].__doc__
     else:
         s_help_string = "****:"
-    help_string = """@UniBorg ( **Custom Built By** @theRay1 ) \n**Verified Account**: ✅\n**Official Website**: N/A
+    help_string = """@UniBorg ( **Custom Built By** @ElytrA7 ) \n**Verified Account**: ✅\n**Official Website**: N/A
 Python {}
 Telethon {}
  
-**Custom Built Fork**: https://github.com/theRay1s/DirtyBorg""".format(
+**Custom Built Fork**: https://github.com/uraniumcore/dirtyborg-rebuilded""".format(
         sys.version,
         __version__
     )
