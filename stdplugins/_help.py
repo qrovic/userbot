@@ -14,7 +14,7 @@ async def _(event):
         s_help_string = borg._plugins[splugin_name].__doc__
     else:
         s_help_string = "****:"
-    help_string = """@UniBorg ( **Custom Built By** @ElytrA7 ) \n**Verified Account**: ✅\n**Official Website**: N/A
+    help_string = """@UniBorg ( ** ReBuilt By** @ElytrA7 ) \n**Verified Account**: ✅\n**Official Website**: N/A
 Python {}
 Telethon {}
  
