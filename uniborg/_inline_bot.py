@@ -86,7 +86,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "© @UniBorg",
-                text="""@theRay1 **( Custom Built By** @theRay1 **)** 
+                text="""@ElytrA7 **( Custom Built By** @ElytrA7 **)** 
 **Verified Account:** ✅
 **Official Website:** N/A
 
@@ -94,7 +94,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 **[GCC 7.4.0]**
 **Talethrun 1.10.6**
 
-**Custom Built Fork:** https://github.com/theRay1s/DirtyBorg""",
+**Custom Built Fork:** https://github.com/uraniumcore/dirtyborg-rebuilded""",
                 buttons=[
                     [custom.Button.url("👤Contact Creator👤", "https://telegram.dog/theRay1"), custom.Button.url(
                         "📼theRay1 Movies Hub📼", "https://t.me/alpacinodump")],
