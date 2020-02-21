@@ -1,18 +1,18 @@
 {
-  "name": "DirtyBorg",
-  "description": "Only For Legends..... By : @theRay1 😎Rebuilt by @ElytrA7",
-  "logo": "https://telegra.ph/file/0dd66fa2c4c42c2b90ba5.jpg",
+  "name": "DirtyBorg-Rebuilded",
+  "description": "Only For Legends..... 😎Rebuilt by @ElytrA7",
+  "logo": "https://telegra.ph/file/a62453c97411d87609532.jpg",
   "keywords": [
-    "sex",
-    "porn",
-    "xxx",
-    "dick",
-    "vagina",
-    "boobs"
+    "Py",
+    "Thon",
+    "Tel",
+    "E",
+    "Th",
+    "On"
   ],
   "repository": "https://github.com/uraniumcore/dirtyborg-rebuilded",
   "website": "https://telegram.dog/UniBorg",
-  "success_url": "https://telegram.dog/theRay1",
+  "success_url": "https://telegram.dog/ElytrA7",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable environment variables.",
